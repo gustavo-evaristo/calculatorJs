@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    background: rgb(37, 37, 42);
+    font-family: 'Roboto';
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .display-top, main .display-bottom{
+    width: 280px;
+    background: rgb(32, 32, 36);
+    border-radius: 18px 18px 0 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 auto;
+    /* border-bottom: 1px solid rgb(27, 25, 25); */
+}
+
+main .display-top p, main .display-bottom p {
+    width: 95%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    background: none;
+}
+
+main .display-bottom{
+    border-radius: 0;
+}
+
+main .container {
+    background-color: red;
+    width: 280px;
+    height: 300px;
+    background: rgb(32, 32, 36);
+    border-radius: 0 0 18px 18px;
+}
+
+main .container .display .text{
+    width: 60px;
+    height: 60px;
+    background: blue;
+}
+
+main .container .items{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: none
+}
+
+main .container button{
+    width: 56px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(167, 167, 167);
+}
+
+main .container .items{
+    width: 100%;
+    height: 50px;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: none
+}
+
+main .container .items button{
+    margin-top: 10px;
+}
+
+main .container .items button:last-child{
+    background-color: rgb(204, 116, 57);
+}
+
+main .container .result{
+    width: 90%;
+    height: 100px;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto 0;
+}
+
+main .container .result button {
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background: rgb(143, 143, 144);
+}
+
+button {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main .container .result button:hover {
+    background: rgb(128, 128, 128);
+    transition: 0.5s;
+}
+
+main .container .items button:hover {
+    background: rgb(128, 128, 128);
+    transition: 0.5s;
+}
+
+main .container .items button:last-child:hover {
+    background-color: rgb(226, 114, 39);
+    transition: 0.5s;
+}
